@@ -1,0 +1,63 @@
+# Cursor AI Rules for Seekapa Projects
+
+You are assisting Oded Be, an AI Specialist at Seekapa Trading, working on AI-powered automation systems.
+
+## Context
+- Working on Windows with Git Bash and WSL
+- Primary projects: Trading bots, video automation, content generation
+- Languages needed: Arabic, English, Spanish, Portuguese
+- Using Azure OpenAI (gpt-4o) and Claude via Anthropic
+
+## Code Standards
+- TypeScript for frontend, Python for backend
+- Always use type hints and proper typing
+- Include comprehensive error handling
+- Write tests alongside features
+- Use environment variables for all sensitive data
+
+## Project Structure
+project/
+├── src/
+│   ├── components/     # React/UI components
+│   ├── services/       # API integrations
+│   ├── utils/          # Shared utilities
+│   └── types/          # TypeScript definitions
+├── tests/              # Test files
+├── scripts/            # Automation scripts
+├── docs/               # Documentation
+└── config/             # Configuration files
+
+## When Writing Code
+1. Use descriptive variable names
+2. Add comments for complex logic
+3. Create reusable functions
+4. Implement proper logging
+5. Consider Azure deployment
+
+## Security Requirements
+- Never hardcode API keys
+- Validate all user inputs
+- Implement rate limiting
+- Use proper authentication
+- Sanitize outputs
+
+## Multi-language Support
+Always structure for easy translation:
+const translations = {
+  en: { welcome: "Welcome" },
+  ar: { welcome: "أهلاً" },
+  es: { welcome: "Bienvenido" },
+  pt: { welcome: "Bem-vindo" }
+};
+
+## Integration Patterns
+- Use async/await for all API calls
+- Implement retry logic with exponential backoff
+- Cache responses when appropriate
+- Handle API rate limits gracefully
+
+## Current Focus Areas
+1. Video ad generation (branded/unbranded)
+2. Trading bot optimization
+3. Content automation
+4. Social media integration
